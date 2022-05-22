@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'constants.dart';
-import 'utils.dart';
+import 'package:guild_demo/constants.dart';
+import 'package:guild_demo/utils.dart';
 
 class WidgetDemoPage extends StatelessWidget {
   const WidgetDemoPage({super.key});

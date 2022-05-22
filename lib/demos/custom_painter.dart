@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'constants.dart';
-import 'utils.dart';
+import 'package:guild_demo/constants.dart';
+import 'package:guild_demo/utils.dart';
 
 class CustomPaintDemoPage extends StatelessWidget {
   const CustomPaintDemoPage({super.key});
