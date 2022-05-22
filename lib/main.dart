@@ -7,7 +7,7 @@ import 'demos/widget.dart';
 
 void main() => runApp(
       const App(
-        demo: Demo.multiChildLayout,
+        demo: Demo.customPainter,
       ),
     );
 

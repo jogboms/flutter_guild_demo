@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Constants {
+  Constants._();
+
   static const size = Size(720, 120);
   static final knobDimension = size.height;
   static final knobSize = Size.square(knobDimension);
@@ -9,6 +11,7 @@ class Constants {
   static final knobTrackSize = Size(size.width - knobToTrackPadding * 2, size.height - knobToTrackPadding * 2);
   static const knobBackgroundColor = Colors.white;
   static const knobElevation = 8.0;
+  static const knobShadowColor = Colors.black87;
   static final borderRadius = BorderRadius.circular(size.height / 2);
   static const gradientColors = [Colors.blueAccent, Colors.purpleAccent];
   static const gradient = LinearGradient(colors: gradientColors);

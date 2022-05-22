@@ -58,6 +58,7 @@ class _SliderWidgetState extends State<SliderWidget> {
                     width: Constants.knobToTrackPadding,
                   ),
                 ),
+                shadowColor: Constants.knobShadowColor,
                 color: _knobColor,
                 elevation: Constants.knobElevation,
               ),
