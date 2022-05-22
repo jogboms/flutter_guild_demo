@@ -7,6 +7,10 @@ extension RenderBoxRectExtension<T extends State> on GlobalKey<T> {
   }
 }
 
+extension ShiftExtension on Offset {
+  Offset shift(double delta) => translate(delta, delta);
+}
+
 // https://stackoverflow.com/a/55088673/8236404
 double Function(double input) interpolate({
   double inputMin = 0,

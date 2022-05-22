@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class Constants {
   static const size = Size(720, 120);
   static final knobDimension = size.height;
+  static final knobSize = Size.square(knobDimension);
   static final knobRadius = knobDimension / 2;
   static final knobToTrackPadding = knobDimension * .15;
   static final knobTrackSize = Size(size.width - knobToTrackPadding * 2, size.height - knobToTrackPadding * 2);
