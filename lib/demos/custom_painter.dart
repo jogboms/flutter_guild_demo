@@ -70,11 +70,7 @@ class SliderPainter extends CustomPainter {
     final upperLimit = knobTrackRect.right;
 
     final knobLeftPosition = dragPosition.clamp(lowerLimit, upperLimit);
-    final knobColor = Color.lerp(
-      Constants.gradientColors.first,
-      Constants.gradientColors.last,
-      interpolate(inputMin: lowerLimit, inputMax: upperLimit)(knobLeftPosition),
-    )!;
+    final knobColor = Constants.gradientColors.mix(lowerLimit, upperLimit, knobLeftPosition);
 
     final knobCenter = Offset(knobLeftPosition, size.height / 2);
     canvas

@@ -23,3 +23,8 @@ double Function(double input) interpolate({
   final diff = (outputMax - outputMin) / (inputMax - inputMin);
   return (input) => ((input - inputMin) * diff) + outputMin;
 }
+
+extension MixGradientColor on List<Color> {
+  Color mix(double min, double max, double value) =>
+      Color.lerp(first, last, interpolate(inputMin: min, inputMax: max)(value))!;
+}

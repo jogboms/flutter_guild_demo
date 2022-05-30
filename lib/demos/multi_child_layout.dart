@@ -91,11 +91,7 @@ class _SliderWidgetState extends State<SliderWidget> {
     setState(() {
       _dragLeftPosition = dragLeftPosition;
       _knobLeftPosition = _dragLeftPosition - sliderRect.left;
-      _knobColor = Color.lerp(
-        Constants.gradientColors.first,
-        Constants.gradientColors.last,
-        interpolate(inputMin: lowerLimit, inputMax: upperLimit)(_dragLeftPosition),
-      )!;
+      _knobColor = Constants.gradientColors.mix(lowerLimit, upperLimit, _dragLeftPosition);
     });
   }
 }

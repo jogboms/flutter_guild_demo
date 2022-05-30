@@ -60,11 +60,7 @@ class SliderRenderObject extends RenderBox {
     final upperLimit = knobTrackRect.right;
 
     final knobLeftPosition = dragPosition.clamp(lowerLimit, upperLimit);
-    final knobColor = Color.lerp(
-      Constants.gradientColors.first,
-      Constants.gradientColors.last,
-      interpolate(inputMin: lowerLimit, inputMax: upperLimit)(knobLeftPosition),
-    )!;
+    final knobColor = Constants.gradientColors.mix(lowerLimit, upperLimit, knobLeftPosition);
 
     final knobCenter = Offset(knobLeftPosition, offset.dy + size.height / 2);
     knobRect = Rect.fromCircle(center: knobCenter, radius: Constants.knobRadius);
